@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Farming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(90deg, #d3d3d3, #ffffff);
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      min-height: 120px;
+    }
+    .value {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .card-blue { border-left: 5px solid #007bff; }
+    .card-green { border-left: 5px solid #20c997; }
+    .card-cyan { border-left: 5px solid #17a2b8; }
+    .card-yellow { border-left: 5px solid #ffc107; }
+    .card-red { border-left: 5px solid #dc3545; }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <h4 class="mb-4 text-dark">Smart Farming</h4>
+    <div class="row row-cols-1 row-cols-md-5 g-3">
+      
+      <!-- KELEMBABAN -->
+      <div class="col">
+        <div class="card card-blue p-3">
+          <div class="label">KELEMBABAN (RH)</div>
+          <div class="value">54 %</div>
+        </div>
+      </div>
+      
+      <!-- TDS -->
+      <div class="col">
+        <div class="card card-green p-3">
+          <div class="label">TDS</div>
+          <div class="value">400 ppm</div>
+        </div>
+      </div>
+      
+      <!-- KEKERUHAN -->
+      <div class="col">
+        <div class="card card-cyan p-3">
+          <div class="label">KEKERUHAN (TURBID)</div>
+          <div class="value">18 NTU</div>
+          <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 30%"></div>
+        </div>
+        </div>
+      </div>
+      
+      <!-- TEMPERATUR AIR -->
+      <div class="col">
+        <div class="card card-yellow p-3">
+          <div class="label">TEMPERATUR AIR (WTEMP)</div>
+          <div class="value">25 C</div>
+        </div>
+      </div>
+      
+      <!-- ALIRAN AIR -->
+      <div class="col">
+        <div class="card card-red p-3">
+          <div class="label">ALIRAN AIR (WFLOW)</div>
+          <div class="value">34</div>
+        </div>
+      </div>
+      
+      <!-- OKSIGEN TERLARUT -->
+      <div class="col">
+        <div class="card card-blue p-3">
+          <div class="label">OKSIGEN TERLARUT (DISS.OXYGEN)</div>
+          <div class="value">10 ppm</div>
+        </div>
+      </div>
+      
+      <!-- INTENSITAS CAHAYA -->
+      <div class="col">
+        <div class="card card-green p-3">
+          <div class="label">INTENSITAS CAHAYA (LUX)</div>
+          <div class="value">100 Lux</div>
+        </div>
+      </div>
+      
+      <!-- TEMPERATUR UDARA -->
+      <div class="col">
+        <div class="card card-cyan p-3">
+          <div class="label">TEMPERATUR UDARA (AMTEMP)</div>
+          <div class="value">34 C</div>
+          <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 50%"></div>
+        </div>
+        </div>
+        </div>
+      
+      <!-- EC -->
+      <div class="col">
+        <div class="card card-yellow p-3">
+          <div class="label">EC</div>
+          <div class="value">2</div>
+        </div>
+      </div>
+      
+      <!-- PH -->
+      <div class="col">
+        <div class="card card-red p-3">
+          <div class="label">PH</div>
+          <div class="value">7.1</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
